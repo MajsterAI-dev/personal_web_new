@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import SiteFooter from "@/components/SiteFooter";
 
 const CaseStudy = () => (
   <div className="min-h-screen bg-background">
