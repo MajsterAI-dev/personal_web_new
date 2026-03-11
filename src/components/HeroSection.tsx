@@ -22,13 +22,13 @@ const HeroSection = () => (
         <div className="section-divider" />
       </motion.div>
       <motion.div
-        className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between bg-foreground text-background px-6 py-4"
+        className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between border border-border px-6 py-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
-        <p className="text-sm uppercase tracking-widest">Procesní analytik</p>
-        <p className="text-sm uppercase tracking-widest">Ing. Ondřej Smolka</p>
+        <p className="text-sm uppercase tracking-widest text-muted-foreground">Procesní analytik</p>
+        <p className="text-sm uppercase tracking-widest font-medium">Ing. Ondřej Smolka</p>
       </motion.div>
       <div className="section-divider mt-0" />
     </div>
