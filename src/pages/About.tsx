@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { Link } from "react-router-dom";
+import { Quote, Target, Users, Zap } from "lucide-react";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -17,44 +18,86 @@ const About = () => (
       <div className="max-w-4xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">O mně</p>
-          <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-tight mb-12">
-            Ing. Ondřej Smolka
+          <h1 className="text-4xl md:text-6xl font-semibold uppercase tracking-tight mb-12">
+            Procesní analytik, který pomáhá firmám růst efektivněji
           </h1>
 
           <div className="section-divider mb-12" />
 
           <motion.section className="mb-16" {...fadeIn}>
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="md:col-span-2">
-                <h2 className="text-2xl md:text-3xl font-semibold uppercase tracking-tight mb-6">Kdo jsem</h2>
-                <p className="text-base leading-relaxed text-muted-foreground mb-6">
-                  Jsem procesní analytik a IT projektový manažer se zázemím v technologiích a projektovém řízení.
-                  Pomáhám firmám zmapovat, jak skutečně fungují – a najít cestu, jak fungovat lépe.
-                </p>
-                <p className="text-base leading-relaxed text-muted-foreground mb-6">
-                  S certifikací PRINCE2 Agile jsem úspěšně vedl projekty od webových aplikací a informačních systémů
-                  až po mobilní aplikace a e-commerce platformy. Mezi mé významné projekty patří mobilní aplikace
-                  Počasí ČHMÚ, Per Rollam, Mediální Olympiáda a informační systém Dotace a Granty.
+            <div className="grid md:grid-cols-5 gap-12">
+              <div className="md:col-span-3 space-y-6">
+                <p className="text-lg leading-relaxed">
+                  Pomáhám firmám a organizacím zmapovat jejich vnitřní procesy, 
+                  odhalit skrytá úzká hrdla a najít cesty k efektivnějšímu fungování.
                 </p>
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  Čerpám ze zkušeností ze zahraničí i z vybudování vlastního e-commerce projektu od nuly.
-                  Vynikám v optimalizaci procesů, vedení týmů a efektivní komunikaci.
+                  Věřím, že každá firma má v sobě potenciál pracovat lépe – rychleji, 
+                  s menšími náklady a spokojenějšími zaměstnanci. Klíčem je porozumět tomu, 
+                  jak ve skutečnosti funguje, ne jak by fungovat měla podle dokumentace.
                 </p>
               </div>
-              <div className="space-y-6">
-                <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Lokace</p>
-                  <p className="text-base font-medium">Ostrava, Česká republika</p>
+              <div className="md:col-span-2 bg-secondary/50 p-6">
+                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">Lokace</p>
+                <p className="text-base mb-6">Ostrava, Česká republika</p>
+                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">Specializace</p>
+                <p className="text-base">Procesní analýza, BPMN</p>
+                <p className="text-base">PRINCE2 Agile</p>
+              </div>
+            </div>
+          </motion.section>
+
+          <div className="section-divider mb-12" />
+
+          <motion.section className="mb-16" {...fadeIn}>
+            <h2 className="text-2xl md:text-3xl font-semibold uppercase tracking-tight mb-8">Proč procesní analýza</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 border border-border flex items-center justify-center">
+                  <Target className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Vzdělání</p>
-                  <p className="text-base font-medium">VŠB-TUO, Ekonomická fakulta</p>
-                  <p className="text-sm text-muted-foreground">Ing. – Informační a znalostní management</p>
+                  <h3 className="font-medium mb-2">Jasná fakta</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Není to o domněnkách. Získáte přesný obraz toho, jak firma skutečně funguje, 
+                    s konkrétními daty a procesními mapami.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 border border-border flex items-center justify-center">
+                  <Zap className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Certifikace</p>
-                  <p className="text-base font-medium">PRINCE2 Agile</p>
-                  <p className="text-base font-medium">FCE – Cambridge English</p>
+                  <h3 className="font-medium mb-2">Měřitelné výsledky</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Optimalizované procesy znamenají reálné úspory času a nákladů – 
+                    od desítek hodin měsíčně po stovky tisíc korun ročně.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 border border-border flex items-center justify-center">
+                  <Users className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-medium mb-2">Spokojený tým</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Když procesy fungují, lidé se nestresují zmatkem. Vědí, co mají dělat, 
+                    a mohou se soustředit na to, v čem vynikají.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="shrink-0 w-10 h-10 border border-border flex items-center justify-center">
+                  <Quote className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-medium mb-2">Udržitelný růst</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Firmy s nastavenými procesy škálují lépe. Rostou bez chaosu, 
+                    zachovávají kvalitu a zvládají větší objemy.
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,55 +106,14 @@ const About = () => (
           <div className="section-divider mb-12" />
 
           <motion.section className="mb-16" {...fadeIn}>
-            <h2 className="text-2xl md:text-3xl font-semibold uppercase tracking-tight mb-8">Zkušenosti</h2>
-            <div className="space-y-8">
-              <div className="border-l-2 border-muted-foreground/30 pl-6">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">2023 – Dosud</p>
-                <h3 className="text-lg font-semibold mb-1">IT Projektový manažer</h3>
-                <p className="text-sm text-muted-foreground mb-3">Railsformers, Ostrava</p>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Řízení projektů s rozpočty v milionech Kč. Vedení až 10členného týmu od inicializace
-                  po úspěšné dokončení. Procesní analýzy, návrh a optimalizace firemních procesů.
-                </p>
-              </div>
-              <div className="border-l-2 border-muted-foreground/30 pl-6">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">2021 – 2022</p>
-                <h3 className="text-lg font-semibold mb-1">Projektový manažer</h3>
-                <p className="text-sm text-muted-foreground mb-3">Renturi, Ostrava</p>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Zřízení a správa tří očkovacích míst – nábor, logistika, komunikace s úřady.
-                </p>
-              </div>
-              <div className="border-l-2 border-muted-foreground/30 pl-6">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">2020 – 2021</p>
-                <h3 className="text-lg font-semibold mb-1">Systémový inženýr (stáž)</h3>
-                <p className="text-sm text-muted-foreground mb-3">TietoEVRY, Ostrava</p>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Správa databázových serverů, dohled nad bezpečnostními incidenty.
-                </p>
-              </div>
-            </div>
-          </motion.section>
-
-          <div className="section-divider mb-12" />
-
-          <motion.section className="mb-16" {...fadeIn}>
-            <h2 className="text-2xl md:text-3xl font-semibold uppercase tracking-tight mb-8">Dovednosti</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                "Procesní analýza",
-                "PRINCE2 Agile",
-                "Projektové řízení",
-                "BPMN modelování",
-                "SIPOC & RACI",
-                "Microsoft Office",
-                "Google Workspace",
-                "N8N automatizace",
-              ].map((skill) => (
-                <div key={skill} className="border border-border px-4 py-3 text-sm text-center">
-                  {skill}
-                </div>
-              ))}
+            <div className="border border-border p-8 md:p-12 text-center">
+              <blockquote className="text-xl md:text-2xl font-light leading-relaxed mb-6">
+                „Mým cílem není komplikovaný manuál, který nikdo nečte. 
+                Cílem je, aby firma fungovala lépe už zítra – a ještě lépe za rok."
+              </blockquote>
+              <p className="text-sm uppercase tracking-widest text-muted-foreground">
+                Ing. Ondřej Smolka
+              </p>
             </div>
           </motion.section>
 
@@ -119,13 +121,13 @@ const About = () => (
 
           <div className="text-center">
             <h3 className="text-2xl md:text-3xl font-semibold uppercase tracking-tight mb-6">
-              Chcete se dozvědět víc?
+              Pojďme probrat Vaši situaci
             </h3>
             <Link
               to="/kontakt"
               className="inline-block bg-foreground text-background px-10 py-4 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity"
             >
-              Kontaktujte mě
+              Domluvit konzultaci
             </Link>
           </div>
         </motion.div>
