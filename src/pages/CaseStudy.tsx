@@ -110,7 +110,7 @@ const CaseStudy = () => (
               className="inline-block bg-foreground text-background px-10 py-4 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity"
             >
               Objednat konzultaci zdarma
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
