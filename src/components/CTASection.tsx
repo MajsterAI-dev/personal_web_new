@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CTASection = () => (
   <section className="py-24 px-6 md:px-12">
@@ -12,12 +13,12 @@ const CTASection = () => (
       <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-8">
         Objednejte se na vstupní konzultaci zdarma
       </h2>
-      <a
-        href="#kontakt"
+      <Link
+        to="/kontakt"
         className="inline-block bg-foreground text-background px-10 py-4 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity"
       >
         Kontaktujte mě
-      </a>
+      </Link>
     </motion.div>
   </section>
 );

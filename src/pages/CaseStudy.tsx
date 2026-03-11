@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -103,12 +104,12 @@ const CaseStudy = () => (
             <h3 className="text-2xl md:text-4xl font-bold uppercase tracking-tight mb-6">
               Chcete podobný výsledek pro svou firmu?
             </h3>
-            <a
-              href="/#kontakt"
+            <Link
+              to="/kontakt"
               className="inline-block bg-foreground text-background px-10 py-4 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity"
             >
               Objednat konzultaci zdarma
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
