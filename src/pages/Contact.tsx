@@ -11,19 +11,37 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       toast.error("Vyplňte prosím všechna povinná pole.");
       return;
     }
     setSending(true);
-    // Simulate send
-    setTimeout(() => {
-      setSending(false);
-      toast.success("Zpráva byla odeslána. Ozvu se vám co nejdříve.");
-      setForm({ name: "", email: "", phone: "", message: "" });
-    }, 1000);
+try {
+  const response = await fetch("https://formsubmit.co/ajax/smolka.ondra@gmail.com", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: form.message,
+      _subject: "Nová zpráva z ondrejsmolka.cz",
+      _captcha: "false"
+    })
+  });
+  if (response.ok) {
+    toast.success("Zpráva byla odeslána. Ozvu se vám co nejdříve.");
+    setForm({ name: "", email: "", phone: "", message: "" });
+  } else {
+    toast.error("Něco se pokazilo. Zkuste to prosím znovu.");
+  }
+} catch {
+  toast.error("Chyba připojení. Zkuste to prosím znovu.");
+} finally {
+  setSending(false);
+}
   };
 
   return (
