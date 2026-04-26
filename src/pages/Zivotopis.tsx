@@ -19,7 +19,7 @@ const Zivotopis = () => {
 
     <div className="shrink-0">
       <img
-        src="/ondrej-smolka.jpg"
+        src="/1744824554745.jpeg"
         alt="Ondřej Smolka"
         className="h-40 w-40 rounded-2xl object-cover md:h-48 md:w-48"
       />
