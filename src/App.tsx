@@ -8,6 +8,7 @@ import CaseStudy from "./pages/CaseStudy.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Zivotopis from "./pages/zivotopis_page.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +23,9 @@ const App = () => (
           <Route path="/o-mne" element={<About />} />
           <Route path="/case-study" element={<CaseStudy />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/zivotopis" element={<Zivotopis />} />
           <Route path="*" element={<NotFound />} />
+          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
