@@ -1,14 +1,19 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /zivotopis
 
 User-agent: Bingbot
 Allow: /
+Disallow: /zivotopis
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /zivotopis
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /zivotopis
 
 User-agent: *
 Allow: /
+Disallow: /zivotopis
