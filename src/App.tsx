@@ -8,7 +8,7 @@ import CaseStudy from "./pages/CaseStudy.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import Zivotopis from "./pages/zivotopis_page.tsx";
+import Zivotopis from "./pages/Zivotopis.tsx";
 
 const queryClient = new QueryClient();
 
