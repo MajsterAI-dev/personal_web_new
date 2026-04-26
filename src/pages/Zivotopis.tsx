@@ -9,44 +9,54 @@ const Zivotopis = () => {
       <main className="px-6 py-12 md:px-12">
         <div className="mx-auto max-w-4xl space-y-12">
           <section className="space-y-6">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Životopis</h1>
-              <p className="mt-4 text-muted-foreground">
-                Ondřej Smolka
-              </p>
-            </div>
+  <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+    <div className="flex-1">
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Životopis</h1>
+      <p className="mt-4 text-muted-foreground">
+        Ondřej Smolka
+      </p>
+    </div>
 
-            <div className="space-y-4 text-base leading-7 text-foreground">
-              <p>
-                Mám zkušenosti s vedením webových aplikací, informačních systémů,
-                mobilních aplikací i e-commerce projektů — od úvodní analýzy,
-                plánování a realizace až po spuštění, následný provoz, day-to-day
-                business a další rozvoj produktu.
-              </p>
+    <div className="shrink-0">
+      <img
+        src="/ondrej-smolka.jpg"
+        alt="Ondřej Smolka"
+        className="h-40 w-40 rounded-2xl object-cover md:h-48 md:w-48"
+      />
+    </div>
+  </div>
 
-              <p>
-                S certifikací PRINCE2 Agile vedu projekty systematicky, s důrazem
-                na kvalitu, rozpočet, termíny, řízení rizik a funkční spolupráci
-                mezi klientem a týmem. Nezaměřuji se pouze na to, aby vzniklo přesně
-                to, co klient zadal, ale aby výsledek skutečně fungoval, byl dlouhodobě
-                udržitelný a přinášel hodnotu byznysově i uživatelsky.
-              </p>
+  <div className="space-y-4 text-base leading-7 text-foreground">
+    <p>
+      Mám zkušenosti s vedením webových aplikací, informačních systémů,
+      mobilních aplikací i e-commerce projektů — od úvodní analýzy,
+      plánování a realizace až po spuštění, následný provoz, day-to-day
+      business a další rozvoj produktu.
+    </p>
 
-              <p>
-                Díky vlastnímu podnikání se na projekty dívám z několika úhlů zároveň —
-                z pohledu klienta, uživatele, projektového týmu i celkové efektivity.
-                Umím hledat úzká místa, předcházet rizikům, nastavovat realistická očekávání
-                a optimalizovat procesy tak, aby projekt fungoval nejen technicky,
-                ale i obchodně a lidsky.
-              </p>
+    <p>
+      S certifikací PRINCE2 Agile vedu projekty systematicky, s důrazem
+      na kvalitu, rozpočet, termíny, řízení rizik a funkční spolupráci
+      mezi klientem a týmem. Nezaměřuji se pouze na to, aby vzniklo přesně
+      to, co klient zadal, ale aby výsledek skutečně fungoval, byl dlouhodobě
+      udržitelný a přinášel hodnotu byznysově i uživatelsky [1].
+    </p>
 
-              <p>
-                Praktická zkušenost s prioritizací, rozhodováním pod tlakem,
-                vyhodnocováním návratnosti aktivit, optimalizací procesů a dlouhodobým
-                fungováním digitálního projektu z pohledu byznysu i zákazníka.
-              </p>
-            </div>
-          </section>
+    <p>
+      Díky vlastnímu podnikání se na projekty dívám z několika úhlů zároveň —
+      z pohledu klienta, uživatele, projektového týmu i celkové efektivity.
+      Umím hledat úzká místa, předcházet rizikům, nastavovat realistická očekávání
+      a optimalizovat procesy tak, aby projekt fungoval nejen technicky,
+      ale i obchodně a lidsky [1].
+    </p>
+
+    <p>
+      Praktická zkušenost s prioritizací, rozhodováním pod tlakem,
+      vyhodnocováním návratnosti aktivit, optimalizací procesů a dlouhodobým
+      fungováním digitálního projektu z pohledu byznysu i zákazníka [1].
+    </p>
+  </div>
+</section>
 
           <section className="space-y-6">
             <h2 className="text-2xl font-semibold tracking-tight">Projekty</h2>
