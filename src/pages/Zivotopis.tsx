@@ -1,3 +1,8 @@
+export default function Zivotopis() {
+  return <div style={{ background: "red", color: "white" }}>TEST ZIVOTOPIS</div>;
+}
+
+
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
