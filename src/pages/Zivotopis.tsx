@@ -68,12 +68,13 @@ const Zivotopis = () => {
                   E-commerce projekt zaměřený na doplňky stravy podporující činnost mozku
                 </p>
                 <a
-                  href="https://greenforz.cz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-block text-sm text-primary underline underline-offset-4 hover:opacity-80"
-                >
-                  greenforz.cz
+        href="https://greenforz.cz"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-1 inline-block text-sm text-primary underline underline-offset-4 hover:opacity-80"
+        style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
+      >
+        greenforz.cz
                 </a>
               </div>
 
