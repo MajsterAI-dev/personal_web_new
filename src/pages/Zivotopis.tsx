@@ -141,7 +141,7 @@ const Zivotopis = () => {
                 spolupráci mezi klientem a týmem. Nezaměřuji se pouze na to,
                 aby vzniklo přesně to, co klient zadal, ale aby výsledek
                 skutečně fungoval, byl dlouhodobě udržitelný a přinášel hodnotu
-                byznysově i uživatelsky [1].
+                byznysově i uživatelsky.
               </p>
 
               <p>
@@ -149,15 +149,14 @@ const Zivotopis = () => {
                 zároveň — z pohledu klienta, uživatele, projektového týmu i
                 celkové efektivity. Umím hledat úzká místa, předcházet rizikům,
                 nastavovat realistická očekávání a optimalizovat procesy tak,
-                aby projekt fungoval nejen technicky, ale i obchodně a lidsky
-                [1].
+                aby projekt fungoval nejen technicky, ale i obchodně a lidsky.
               </p>
 
               <p>
                 Praktická zkušenost s prioritizací, rozhodováním pod tlakem,
                 vyhodnocováním návratnosti aktivit, optimalizací procesů a
                 dlouhodobým fungováním digitálního projektu z pohledu byznysu i
-                zákazníka [1].
+                zákazníka.
               </p>
             </div>
           </section>
