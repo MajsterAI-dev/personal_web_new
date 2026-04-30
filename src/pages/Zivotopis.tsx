@@ -69,7 +69,7 @@ const Zivotopis = () => {
                 </p>
                 <a
                   href="https://greenforz.cz"
-                  target="_blank"
+                  target="https://greenforz.cz"
                   rel="noopener noreferrer"
                   className="mt-1 inline-block text-sm text-primary underline underline-offset-4 hover:opacity-80"
                 >
