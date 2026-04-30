@@ -60,7 +60,11 @@ const Zivotopis = () => {
 
           <section className="space-y-6">
             <h2 className="text-2xl font-semibold tracking-tight">Projekty</h2>
-
+<div>
+  <a href="https://greenforz.cz" target="_blank" rel="noreferrer">
+    KLIKNI SEM
+  </a>
+</div>
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-medium">GreenForz</h3>
