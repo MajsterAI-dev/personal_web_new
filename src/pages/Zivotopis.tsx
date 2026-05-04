@@ -39,14 +39,14 @@ const projects = [
   {
     title: "Belvani",
     description: "Web pro kosmetické studio Bc. Vanessa Ščotková",
-    link: "https://https://majsterai-dev.github.io/belvani/",
+    link: "https://majsterai-dev.github.io/belvani/",
     label: "belvani.cz",
   },
   {
     title: "Majstr",
     description:
       "Prezentační webová stránka pro telegramovou aplikaci / digitální produkt",
-    link: "https://https://majsterai-dev.github.io/majsta_web/",
+    link: "https://majsterai-dev.github.io/majsta_web/",
     label: "majstr.cz",
   },
 ];
