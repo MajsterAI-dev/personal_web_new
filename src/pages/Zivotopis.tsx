@@ -18,31 +18,35 @@ const projects = [
   {
     title: "Jablečný Honza",
     description:
-      "Analýza fungování procesů a návrh úprav s cílem zjednodušit provoz, odstranit slabá místa a zvýšit efektivitu.",
+      "Analýza fungování procesů a návrh úprav s cílem zjednodušit provoz, odstranit slabá místa a zvýšit efektivitu",
+    link: "https://jablecnyhonza.cz",
     label: "jablecnyhonza.cz",
   },
   {
     title: "Automatizace procesů pomocí N8N",
     description:
-      "Návrh a realizace automatizací s cílem zefektivnit obsahové, administrativní i provozní činnosti.",
+      "Návrh a realizace automatizací s cílem zefektivnit obsahové, administrativní i provozní činnosti",
     note:
-      "Příklady: generování článků na web, tvorba LinkedIn postů, automatizace fakturace přes Telegram chat, automatizace částí procesních analýz a převod opakujících se činností do efektivnějších workflow.",
+      "Příklady: generování článků na web, tvorba LinkedIn postů, automatizace fakturace přes Telegram chat, automatizace částí procesních analýz a převod opakujících se činností do efektivnějších workflow",
   },
   {
     title: "ondrejsmolka.cz",
     description:
       "Osobní web / osobní značka / prezentace zkušeností a projektů",
+      link: "https://ondrejsmolka.cz",
     label: "ondrejsmolka.cz",
   },
   {
     title: "Belvani",
     description: "Web pro kosmetické studio Bc. Vanessa Ščotková",
+    link: "https://https://majsterai-dev.github.io/belvani/",
     label: "belvani.cz",
   },
   {
     title: "Majstr",
     description:
       "Prezentační webová stránka pro telegramovou aplikaci / digitální produkt",
+    link: "https://https://majsterai-dev.github.io/majsta_web/",
     label: "majstr.cz",
   },
 ];
@@ -52,16 +56,18 @@ const education = [
     title: "Informační a znalostní management",
     place: "VŠB – Technická univerzita Ostrava, Ekonomická fakulta",
     period: "Inženýrské studium · 2021 – 2023",
+    note: "Titul inženýr",
   },
   {
     title: "Informatika v ekonomice",
     place: "VŠB – Technická univerzita Ostrava, Ekonomická fakulta",
     period: "Bakalářské studium · 2018 – 2021",
+    note: "Titul bakalář",
   },
   {
-    title: "Erasmus+ | Informatika v ekonomice",
+    title: "Erasmus+",
     place: "University of Maribor, Slovinsko",
-    period: "2019 – 2020",
+    period: "2019",
   },
   {
     title: "Všeobecné gymnázium",
@@ -85,7 +91,7 @@ const Zivotopis = () => {
                     Životopis
                   </p>
                   <h1 className="mt-4 text-5xl font-bold uppercase leading-[0.95] md:text-7xl">
-                    Ondřej
+                    Ing. Ondřej
                     <br />
                     Smolka
                   </h1>
@@ -146,17 +152,17 @@ const Zivotopis = () => {
 
               <p>
                 Díky vlastnímu podnikání se na projekty dívám z několika úhlů
-                zároveň — z pohledu klienta, uživatele, projektového týmu i
+                zároveň — z pohledu klienta, uživatele, projektového týmu, byznysu i
                 celkové efektivity. Umím hledat úzká místa, předcházet rizikům,
                 nastavovat realistická očekávání a optimalizovat procesy tak,
                 aby projekt fungoval nejen technicky, ale i obchodně a lidsky.
               </p>
 
               <p>
-                Praktická zkušenost s prioritizací, rozhodováním pod tlakem,
-                vyhodnocováním návratnosti aktivit, optimalizací procesů a
-                dlouhodobým fungováním digitálního projektu z pohledu byznysu i
-                zákazníka.
+                Zároveň se dlouhodobě rozvíjím v oblasti produktového managementu a IT
+                analýzy, protože právě v těchto disciplínách vidím klíč k tomu, aby
+                digitální produkty nevznikaly jen správně po technické stránce, ale aby
+                skutečně řešily potřeby uživatelů i byznysu.
               </p>
             </div>
           </section>
