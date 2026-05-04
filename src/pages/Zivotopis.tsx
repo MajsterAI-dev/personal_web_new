@@ -76,6 +76,35 @@ const education = [
   },
 ];
 
+const workExperience = [
+  {
+    title: "IT Projektový manažer",
+    company: "Railsformers",
+    period: "Červen 2023 - Dosud",
+    location: "Ostrava",
+    description:
+      "Řízení projektů s rozpočtovým rozmezím v milionech Kč a vedení až 10členného projektového týmu od inicializace projektu až po jeho úspěšné dokončení. Zajištění dodržování časových harmonogramů, rozpočtů a kvality deliverables. Procesní analýzy, návrh nových procesů, jejich optimalizace a implementace do firemních politik.",
+    projects:
+      "Mediální olympiáda (webová aplikace), Per Rollam (webová aplikace), Počasí ČHMÚ (mobilní aplikace), Černá kostka (více projektů), Dotace a granty (informační systém)",
+  },
+  {
+    title: "Projektový manažer",
+    company: "Renturi",
+    period: "Září 2021 - Březen 2022",
+    location: "Ostrava, Česká Třebová",
+    description:
+      "Zřízení a správa tří očkovacích míst včetně náboru pracovníků, objednávek vakcín a materiálu, návrhu otevírací doby, komunikace s pracovníky a úřady, plánování personálních změn a objednávek.",
+  },
+  {
+    title: "Systémový inženýr (stáž)",
+    company: "TietoEVRY",
+    period: "Červenec 2020 - Červenec 2021",
+    location: "Ostrava",
+    description:
+      "Správa databázových serverů, oprava poruch a dohled nad bezpečnostními incidenty.",
+  },
+];
+
 const Zivotopis = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -164,6 +193,47 @@ const Zivotopis = () => {
                 digitální produkty nevznikaly jen správně po technické stránce, ale aby
                 skutečně řešily potřeby uživatelů i byznysu.
               </p>
+            </div>
+          </section>
+
+          <section className="grid gap-8 border-t border-border pt-12 md:grid-cols-[180px_minmax(0,1fr)] md:gap-14">
+            <div>
+              <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
+                Pracovní zkušenosti
+              </h2>
+            </div>
+
+            <div className="divide-y divide-border">
+              {workExperience.map((item) => (
+                <article
+                  key={`${item.company}-${item.period}`}
+                  className="grid gap-3 py-6 first:pt-0 sm:grid-cols-[220px_minmax(0,1fr)]"
+                >
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-medium">{item.title}</h3>
+                    <p className="text-sm uppercase tracking-wide text-muted-foreground">
+                      {item.company}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-medium">
+                      {item.period} | {item.location}
+                    </p>
+                    <p className="mt-3 text-muted-foreground">
+                      {item.description}
+                    </p>
+                    {item.projects && (
+                      <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                        <span className="font-medium text-foreground">
+                          Projekty:
+                        </span>{" "}
+                        {item.projects}
+                      </p>
+                    )}
+                  </div>
+                </article>
+              ))}
             </div>
           </section>
 
