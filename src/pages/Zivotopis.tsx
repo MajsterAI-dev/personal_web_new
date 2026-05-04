@@ -107,7 +107,7 @@ const Zivotopis = () => {
                 <div className="absolute inset-x-6 -top-4 h-16 bg-secondary md:inset-x-8" />
                 <div className="relative border border-foreground bg-background p-3">
                   <img
-                    src="/1744824554745.jpeg"
+                    src="/ondrej-smolka-2026.jpeg"
                     alt="Ondřej Smolka"
                     className="aspect-[4/5] w-full object-cover object-center"
                   />
