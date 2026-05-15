@@ -2,10 +2,9 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 const profileHighlights = [
-  "Projektový manažer",
+  "IT Projektový manažer",
   "Procesní analytik",
-  "PRINCE2 Agile",
-  "Digitální projekty",
+  "AI a automatizace",
 ];
 
 const projects = [
