@@ -165,7 +165,7 @@ const Zivotopis = () => {
             <div className="space-y-5 text-base leading-7 text-foreground">
               <p>
                 Mám zkušenosti s vedením webových aplikací, informačních
-                systémů, mobilních aplikací i e-commerce projektů — od úvodní
+                systémů, mobilních aplikací i e-commerce projektů - od úvodní
                 analýzy, plánování a realizace až po spuštění, následný provoz,
                 day-to-day business a další rozvoj produktu.
               </p>
@@ -181,17 +181,17 @@ const Zivotopis = () => {
 
               <p>
                 Díky vlastnímu podnikání se na projekty dívám z několika úhlů
-                zároveň — z pohledu klienta, uživatele, projektového týmu, byznysu i
+                zároveň - z pohledu klienta, uživatele, projektového týmu, byznysu i
                 celkové efektivity. Umím hledat úzká místa, předcházet rizikům,
                 nastavovat realistická očekávání a optimalizovat procesy tak,
                 aby projekt fungoval nejen technicky, ale i obchodně a lidsky.
               </p>
 
               <p>
-                Zároveň se dlouhodobě rozvíjím v oblasti produktového managementu a IT
-                analýzy, protože právě v těchto disciplínách vidím klíč k tomu, aby
-                digitální produkty nevznikaly jen správně po technické stránce, ale aby
-                skutečně řešily potřeby uživatelů i byznysu.
+                Dlouhodobě se rozvíjím v produktovém managementu a IT analýze, 
+                protože právě tyto disciplíny mi dávají možnost chápat vývoj digitálních produktů v celé jeho šíři ¨
+                - od prvotního zadání přes návrh a realizaci až po finální výsledek, včetně všech souvislostí, které ho ovlivňují.
+                 Věřím, že právě díky tomuto celkovému pohledu mohou vznikat řešení, která jsou technicky správná a zároveň fungují nejen technicky, ale i v kontextu uživatelů a firemních cílů.
               </p>
             </div>
           </section>
