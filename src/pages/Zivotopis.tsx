@@ -2,6 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 const profileHighlights = [
+  "Projektový manažer",
   "Procesní analytik",
   "PRINCE2 Agile",
   "Digitální projekty",
@@ -191,7 +192,8 @@ const Zivotopis = () => {
                 Dlouhodobě se rozvíjím v produktovém managementu a IT analýze, 
                 protože právě tyto disciplíny mi dávají možnost chápat vývoj digitálních produktů v celé jeho šíři ¨
                 - od prvotního zadání přes návrh a realizaci až po finální výsledek, včetně všech souvislostí, které ho ovlivňují.
-                 Věřím, že právě díky tomuto celkovému pohledu mohou vznikat řešení, která jsou technicky správná a zároveň fungují nejen technicky, ale i v kontextu uživatelů a firemních cílů.
+                 Věřím, že právě díky tomuto celkovému pohledu mohou vznikat řešení, která jsou technicky správná a zároveň fungují nejen technicky, 
+                 ale i v kontextu uživatelů a firemních cílů.
               </p>
             </div>
           </section>
